@@ -13,7 +13,7 @@ if (popupLinks.length > 0) {
       const popupName = popupLink.getAttribute("href").replace("#", "");
       const curentPopup = document.getElementById(popupName);
       popupOpen(curentPopup);
-      e.preventDtfault();
+      //e.preventDtfault();
     });
   }
 }
@@ -23,7 +23,7 @@ if (popupCloseIcon.length > 0) {
     const el = popupCloseIcon[index];
     el.addEventListener("click", function (e) {
       popupClose(el.closest(".popup"));
-      e.preventDtfault();
+      //e.preventDtfault();
     });
   }
 }
@@ -62,7 +62,7 @@ function bodyLock() {
       el.style.paddingRight = lockPaddingValue;
     }
   }
-  body.style.paddingRight = lockPaddingValue;
+  body.style.paddingRight = 0;
   body.classList.add("lock");
 
   unlock = false;
