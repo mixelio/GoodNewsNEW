@@ -1097,3 +1097,7 @@ body {
   width: 800px;
   height: 450px;
 }
+
+.popup__content {
+  box-shadow: 0 0 10px #fff;
+}
