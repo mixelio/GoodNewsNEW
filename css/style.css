@@ -1267,7 +1267,6 @@ body {
 }
 
 .popup__body {
-  border: 1px solid #c71b1b;
   position: absolute;
   width: 80%;
   height: 80%;
