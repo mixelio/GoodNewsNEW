@@ -167,6 +167,7 @@ input::-webkit-search-results-decoration {
 body {
   font-family: Montserrat;
   position: relative;
+  background: url("../img/back-all.png");
 }
 
 .container {
@@ -447,6 +448,7 @@ body {
   height: 70px;
   color: #fff;
   background-color: red;
+  border-radius: 20px 20px 0 0;
   z-index: 0;
   transform: translateY(10px);
   transition-duration: 300ms;
@@ -501,7 +503,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  color: #383838;
+  color: #dadada;
 }
 
 .last_translation__item {
@@ -513,7 +515,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   word-wrap: break-word;
-  background-color: #f1fbf5;
+  background: url("../img/back1.png");
+  border-radius: 20px;
   transform: scale(1);
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   transition-duration: 500ms;
@@ -521,8 +524,8 @@ body {
 }
 .last_translation__item .last_translation__play {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  right: 10px;
+  top: 10px;
   width: 40px;
   height: 40px;
   background: url("../img/play.svg") 0 0/100% no-repeat;
@@ -557,7 +560,7 @@ body {
 
 .last_translation__speaker {
   font-weight: 600;
-  color: #383838;
+  color: #dadada;
 }
 
 .news {
@@ -1198,9 +1201,9 @@ body {
 }
 
 .footer__socialitem {
-  flex: 0 1 20%;
-  width: 90px;
-  height: 90px;
+  flex: 0 1 10%;
+  width: 40px;
+  height: 40px;
 }
 .footer__socialitem a {
   width: 100%;
@@ -1212,8 +1215,8 @@ body {
 }
 .footer__socialitem a:before {
   content: "";
-  width: 90px;
-  height: 95px;
+  width: 40px;
+  height: 42px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1268,8 +1271,8 @@ body {
   justify-content: center;
 }
 .popup__body iframe {
-  width: 800px;
-  height: 450px;
+  width: 100%;
+  height: auto;
 }
 
 .popup__content {
@@ -1445,6 +1448,9 @@ body.lock {
 
   .last_translation__row {
     flex-direction: column;
+  }
+  .last_translation__row .last_translation__item {
+    min-height: 150px;
   }
 
   .last_translation__item .last_translation__play {
