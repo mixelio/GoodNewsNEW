@@ -1,6 +1,17 @@
 "use strict";
 
 $(document).ready(function () {
+  $(".news__slider").slick({
+    arrows: true,
+    slidesToShow: 1,
+    infinite: true,
+    speed: 500,
+    autoplay: 500,
+    autoplaySpeed: 6000,
+  });
+});
+
+$(document).ready(function () {
   const mediaQuery = window.matchMedia("(max-width: 600px)");
   if (mediaQuery.matches) {
     $(".ministry__slider").slick({
